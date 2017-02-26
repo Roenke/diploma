@@ -23,6 +23,10 @@
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{mathtext} 				% русские буквы в фомулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}
 
 %----------------------------------------------------------------------------------------
 %   TITLE PAGE
@@ -30,10 +34,10 @@
 
 \title[Stream Debugger]{Java Stream API debugger} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{Vitaliy Bibaev} % Your name
+\author{Виталий Бибаев} % Your name
 \institute[SpbAU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-Saint-Petersburg Academic University \\ % Your institution for the title page
+Санкт-Петербургский академический университет \\ % Your institution for the title page
 \medskip
 \textit{vitaliy.bibaev@gmail.com} % Your email address
 }
@@ -45,7 +49,8 @@ Saint-Petersburg Academic University \\ % Your institution for the title page
 \titlepage % Print the title page as the first slide
 \end{frame}
 
-\input{exapmple.tex}
+
 \input{frames/main.tex}
 
+%\input{exapmple.tex}
 \end{document}
