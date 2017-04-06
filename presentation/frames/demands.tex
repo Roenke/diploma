@@ -1,7 +1,8 @@
 \begin{frame}
-\frametitle{Требования функциям в промежуточных операциях} % Table of contents slide, comment this block out
+\frametitle{\insertsection} 
+\framesubtitle{\insertsubsection}
 \begin{itemize}
-	\item "must be non-interfering" - не могут модифицировать источник
-	\item "in most cases must be stateless" - 
+	\item Операции над объектами не могут модифицировать объект - источник (если он есть)
+	\item Функции над объектами в потоке не должны иметь состояния (в большинстве случаев)
 \end{itemize}
 \end{frame}

@@ -1,33 +1,66 @@
-\input{frames/overview.tex}
-\input{frames/review.tex}
 
+%\input{frames/overview.tex}
+\section{Введение}
+\subsection{Язык программирования Java}
 \input{frames/java.tex}
 
+
 % Streams
+\subsection{Интерфейс потоков объектов}
 \input{frames/about-stream-api.tex}
+\subsection{Интерфейс потоков объектов. Пример.}
 \input{frames/stream-api-example-1.tex}
+\input{frames/example-task.tex}
 \input{frames/stream-api-example-2.tex}
 \input{frames/stream-api-example-3.tex}
-\input{frames/laziness.tex}
-\input{frames/non-repeatable.tex}
+\input{frames/stream-api-example-4.tex}
+\subsection{Интерфейс потоков объектов. Реализация}
 \input{frames/types-of-calls.tex}
 \input{frames/flags-on-the-stream.tex}
-\input{frames/guarantees.tex}
-\input{frames/demands.tex}
+\input{frames/api-extentions.tex}
 
 % Debugger
+\subsection{Отладчик}
+\input{frames/review.tex}
 \input{frames/java-debugger.tex}
 \input{frames/jdpa.tex}
 \input{frames/jdi.tex}
 
 % Stream debugging
+\section{Отладка потоков объектов}
+\subsection{Поддержка со стороны сред разработки}
 \input{frames/comparison.tex}
+\subsection{Проблемы}
+\input{frames/debugging-issues.tex}
+\subsection{Как сейчас можно отладить поток объектов}
+\input{frames/debugging-now.tex}
+\subsection{адище}
+\input{frames/hard-real-case.tex}
+
+\section{Цель}
 \input{frames/goals.tex}
-
-
+\subsection{Существующие решения}
 \input{frames/analogs.tex}
+\subsection{Особенности OzCode}
+\input{frames/ozcode-linq.tex}
 
+\section{Решение}
+\subsection{Гарантии, предоставляемые библиотекой}
+\input{frames/guarantees.tex}
+\subsection{Требования к пользователю}
+\input{frames/demands.tex}
+\subsection{Ограничения}
+\input{frames/non-repeatable.tex}
+\subsection{Метод peek}
+\input{frames/peek.tex}
+\input{frames/peek-results.tex}
+\subsection{Обобщение}
+\input{frames/peek-generalization.tex}
+\subsection{Пример}
 \input{frames/probable-solutions.tex}
+\subsection{Исключения}
+\input{frames/distinct-problem.tex}
+\subsection{Вычисление}
 \input{frames/selected-manners.tex}
 \input{frames/corner-cases.tex}
 

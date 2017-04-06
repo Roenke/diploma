@@ -1,12 +1,16 @@
 \begin{frame}
 \frametitle{Части цепочки вычислений} % Table of contents slide, comment this block out
 \begin{itemize}
-	\item Source - источник объектов. Например, массив, коллекция, функция генератор, потоки ввода/вывода и другие.
-	\item Intermediate operations. Промежуточные операции, которые преобразуют поток объектов.
+	\item \textbf{Источник объектов}. Например, массив, коллекция, функция генератор, потоки ввода/вывода и другие.
+	\inputminted{java}{code/Producer.java}
+	\item \textbf{Промежуточные операции}, которые преобразуют поток объектов.
 	\begin{itemize}
 		\item Без состояния
+		\inputminted{java}{code/Stateless.java}
 		\item С состоянием
+		\inputminted{java}{code/Stateful.java}
 	\end{itemize}
-	\item Terminal operation. Операция которая завершает цепочку.
+	\item \textbf{Завершающая операция}. Операция которая завершает цепочку, выполняя какое-либо действие над объектами внутри потока.
+	\inputminted{java}{code/Termination.java}
 \end{itemize}
 \end{frame}

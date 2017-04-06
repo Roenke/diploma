@@ -1,9 +1,11 @@
 \begin{frame}
-\frametitle{Гарантии} % Table of contents slide, comment this block out
+\frametitle{\insertsection} 
+\framesubtitle{\insertsubsection}
 \begin{itemize}
-	\item "Streams are lazy; computation on the source data is only performed when the terminal operation is initiated, and source elements are consumed only as needed."
-	\item Это значит, что объекты не могут браться из источника только по необходимости. % ситуация, когда из каких то промежуточных операций забрались объекты, но затем не использовались исключены
-	\item Но это не исключает, что некоторым промежуточным операциям потребуется прочитать всё объекты. (см sorted, distinct, и др)
+	\item Поток объектов ленивый. Это значит, что объекты не из источника будут браться только когда выполняется терминальная операция и ей нужен объект.
+	\item Это исключает ситуации, когда из каких-то промежуточных операций требовались объекты, но затем не использовались
+	\item Но это не исключает, что некоторым промежуточным операциям потребуется прочитать более одного объекта, чтобы вернуть один. (см sorted, distinct, и др)
+	\item Следствие: нет вызова терминальной операции - нет вычислений
 \end{itemize}
 
 \end{frame}
