@@ -34,7 +34,7 @@
 \input{frames/debugging-issues.tex}
 \subsection{Как сейчас можно отладить поток объектов}
 \input{frames/debugging-now.tex}
-\subsection{адище}
+\subsection{Пример использования интерфейса потоков в проекте с открытым кодом}
 \input{frames/hard-real-case.tex}
 
 \section{Цель}
@@ -47,10 +47,11 @@
 \section{Решение}
 \subsection{Гарантии, предоставляемые библиотекой}
 \input{frames/guarantees.tex}
-\subsection{Требования к пользователю}
+\subsection{Требования к пользовательскому коду}
 \input{frames/demands.tex}
-\subsection{Ограничения}
+\subsection{Ограничения и особенности}
 \input{frames/non-repeatable.tex}
+\input{frames/assign.tex}
 \subsection{Метод peek}
 \input{frames/peek.tex}
 \input{frames/peek-results.tex}
@@ -63,6 +64,18 @@
 \subsection{Вычисление}
 \input{frames/selected-manners.tex}
 \input{frames/corner-cases.tex}
+
+\section{Дополнительно}
+\input{extra-main.tex}
+\subsection{Исключения}
+\input{frames/extra-exceptions.tex}
+
+\subsection{Промежуточные состояния итераторов}
+\input{frames/extra-spliterator-state.tex}
+\input{frames/extra-spliterator-state-output.tex}
+
+\subsection{Порядок при операциях с состоянием}
+\input{frames/extra-stateful-op-order.tex}
 
 \input{frames/done.tex}
 \input{frames/tbd.tex}
