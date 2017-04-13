@@ -1,4 +1,4 @@
-public static List<String> streamAPIWithPeeks(List<Person> persons) {
+List<String> streamAPIWithPeeks(List<Person> persons) {
   return persons.stream()
       .peek(x -> System.out.println(x))
       .filter(person -> person.age < 18)

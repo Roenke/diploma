@@ -5,7 +5,7 @@ after filter: 2 - Petr [15]
 3 - Dmitry [14]
 after filter: 3 - Dmitry [14]
 4 - Sasha [20]
-5 - Gena [33]
+5 - Michael [33]
 after sort: 1 - Vasily [10]
 after map: Vasily
 after sort: 3 - Dmitry [14]
