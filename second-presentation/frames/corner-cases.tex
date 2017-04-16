@@ -1,0 +1,18 @@
+\begin{frame}
+\frametitle{\insertsection} 
+\framesubtitle{\insertsubsection}
+При таком подходе возникает несколько вопросов:
+\begin{itemize}
+	\item Поля и методы этого класса.
+	
+	\item Расположение класса: пакет, объемлющий класс.
+	
+	\item Доступ к полям и методам объемлющего класса.
+
+	\item Доступ к приватным членам класса из лямбд и анонимных классов.
+
+	\item Минимизация дальнейших обращений к виртуальной машине.
+\end{itemize}
+
+\inputminted{java}{code/EvalClass.java}
+\end{frame}

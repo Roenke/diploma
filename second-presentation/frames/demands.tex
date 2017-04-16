@@ -1,0 +1,10 @@
+\begin{frame}
+\frametitle{\insertsection} 
+\framesubtitle{\insertsubsection}
+\begin{itemize}
+	\item Операции над объектами не могут модифицировать объект - источник (если он есть)
+	\item Функции над объектами в потоке не должны иметь состояния (в большинстве случаев)
+	\item Однажды созданный объект потока объектов может вызвать лишь одну терминальную операцию.
+	\inputminted{java}{code/OneTermination.java}
+\end{itemize}
+\end{frame}
