@@ -1,4 +1,4 @@
-                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Beamer Presentation
 % LaTeX Template
 % Version 1.0 (10/11/12)
@@ -17,9 +17,11 @@
 
 \documentclass{beamer}
 
-\mode<presentation> {
-\input{theme.tex}
-}
+\usetheme{HSE}
+
+%\mode<presentation> {
+%\input{theme.tex}
+%}
 
 \usepackage{textcomp}
 \usepackage{graphicx} % Allows including images
@@ -30,12 +32,18 @@
 \usepackage[english,russian]{babel}
 \usepackage{minted}
 \usepackage{graphicx}
+\usepackage{animate}
 
+\usepackage{etoolbox}
+\makeatletter
+\preto{\appendix}{%
+	\patchcmd{\beamer@continueautobreak}{\refstepcounter{framenumber}}{}{}{}}
+\makeatother
 %----------------------------------------------------------------------------------------
 %   TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[]{Отладчик Stream API для языка программирования Java в среде разработки IntelliJ IDEA} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[]{Отладка Stream API в среде разработки IntelliJ IDEA} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author{Виталий Бибаев} % Your name
 \institute[СПБАУ] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
