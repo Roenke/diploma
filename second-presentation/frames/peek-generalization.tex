@@ -5,13 +5,14 @@
 Для любого промежуточного вызова запомним объекты перед и после вызова.
 \begin{align*}
 	&.peek(x \rightarrow store(x, time)) \\
-	&.call(z \rightarrow \{...; time.increment()\})\\
+	&.call(...)\\
+	&.peek(z \rightarrow \{time.increment()\})\\
 	&.peek(y \rightarrow store(y, time))
 \end{align*}
 
 В результате получим два множества $Before = \{(t_i, x_i)\}, After = \{(t_i, y_i)\}$. 
 
-Чтобы найти переходы достаточно построить отображения
+Чтобы найти переходы достаточно построить \textbf{отображения}
 \begin{align*}
 	(t_i, x_i) \rightarrow List[(t_j, y_j)], \ \forall (t_i, x_i) \in Before \\
 	(t_i, y_i) \rightarrow List[(t_j, x_j)], \ \forall (t_j, y_j) \in After

@@ -1,1 +1,1 @@
-collect(Collectors.toList())
+toArray()

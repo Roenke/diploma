@@ -1,1 +1,2 @@
-sorted(Comparator.comparing(x -> x.age))
+distinct()
+sorted()
