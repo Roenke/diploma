@@ -1,0 +1,21 @@
+\begin{frame}
+\frametitle{\insertsection} 
+\framesubtitle{\insertsubsection}
+Для отладочных целей интерфейс Stream определяет метод peek.
+С помощью него можем запомнить объекты перед и после вызова не изменив логику.
+\begin{align*}
+	&.peek(x \rightarrow store(x, time)) \\
+	&.call(...)\\
+	&.peek(z \rightarrow \{time.increment()\})\\
+	&.peek(y \rightarrow store(y, time))
+\end{align*}
+
+В результате получим два множества $Before = \{(t_i, x_i)\}, After = \{(t_i, y_i)\}$. Они образуют состояния между вызовами.
+
+Чтобы найти переходы достаточно построить \textbf{отображения}
+\begin{align*}
+	(t_i, x_i) \rightarrow List[(t_j, y_j)], \ \forall (t_i, x_i) \in Before \\
+	(t_i, y_i) \rightarrow List[(t_j, x_j)], \ \forall (t_j, y_j) \in After
+\end{align*}
+
+\end{frame}

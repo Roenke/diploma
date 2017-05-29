@@ -1,0 +1,20 @@
+\begin{frame}[noframenumbering]
+\frametitle{\insertsection} 
+\framesubtitle{\insertsubsection}
+\fboxsep=0pt
+\noindent
+	\begin{minipage}[t]{0.48\linewidth}
+		Информация, которую можно извлечь:
+		\begin{itemize}
+			\item Последовательность прохождения объектов через цепочку вызовов
+			\item Результат фильтрации
+			\item sorted имеет состояние и требует выполнить весь поток до своего вызова
+			\item Преобразования объектов
+		\end{itemize}
+	\end{minipage}
+	\hfill%
+		\begin{minipage}[t]{0.48\linewidth}
+			Результат вызова:
+			\inputminted{text}{code/peekResults.txt}
+		\end{minipage}
+\end{frame}

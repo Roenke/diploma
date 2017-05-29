@@ -1,0 +1,10 @@
+\begin{frame}[noframenumbering]
+\frametitle{\insertsection} 
+\framesubtitle{\insertsubsection}
+\begin{itemize}
+	\item "Streams are lazy; computation on the source data is only performed when the terminal operation is initiated, and source elements are consumed only as needed."
+	\item Это значит, что объекты не могут браться из источника только по необходимости. % ситуация, когда из каких то промежуточных операций забрались объекты, но затем не использовались исключены
+	\item Но это не исключает, что некоторым промежуточным операциям потребуется прочитать всё объекты. (см sorted, distinct, и др)
+\end{itemize}
+
+\end{frame}

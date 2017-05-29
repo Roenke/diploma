@@ -1,0 +1,14 @@
+1: 1 - Vasily [10]
+2: after filter: 1 - Vasily [10]
+3: 2 - Petr [15]
+4: after filter: 2 - Petr [15]
+5: 3 - Dmitry [14]
+6: after filter: 3 - Dmitry [14]
+7: 4 - Sasha [20]
+8: 5 - Michael [33]
+9: after sort: 1 - Vasily [10]
+10: after map: Vasily
+11: after sort: 3 - Dmitry [14]
+12: after map: Dmitry
+13: after sort: 2 - Petr [15]
+14: after map: Petr

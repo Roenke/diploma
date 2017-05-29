@@ -1,0 +1,69 @@
+                 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\usetheme{HSE}
+
+%\mode<presentation> {
+%\input{theme.tex}
+%}
+
+\usepackage{textcomp}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{mathtext} 				% русские буквы в фомулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}
+\usepackage{minted}
+\usepackage{graphicx}
+\usepackage{animate}
+
+\usepackage{etoolbox}
+\makeatletter
+\preto{\appendix}{%
+	\patchcmd{\beamer@continueautobreak}{\refstepcounter{framenumber}}{}{}{}}
+\makeatother
+%----------------------------------------------------------------------------------------
+%   TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[]{Отладка операций в функциональном стиле на языке Java в среде разработки IntelliJ IDEA} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Бибаев Виталий Игоревич} % Your name
+\institute[СПБАУ] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Научный руководитель:  Ушаков Егор Анатольевич\\
+\medskip
+САНКТ-ПЕТЕРБУРГСКИЙ АКАДЕМИЧЕСКИЙ УНИВЕРСИТЕТ \\ % Your institution for the title page
+\medskip
+\textit{vitaliy.bibaev@gmail.com} % Your email address
+}
+\date{13.06.2017} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+
+\input{frames/main.tex}
+
+%\input{exapmple.tex}
+\end{document}

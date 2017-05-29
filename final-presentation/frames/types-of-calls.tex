@@ -1,0 +1,17 @@
+\begin{frame}
+\frametitle{\insertsection} 
+\framesubtitle{\insertsubsection}
+\begin{itemize}
+	\item \textbf{Источник объектов}. Например, массив, коллекция, функция генератор, поток ввода и другие.
+	\inputminted{java}{code/Producer.java}
+	\item \textbf{Промежуточные операции}. Преобразуют объекты внутри потока.
+	\begin{itemize}
+		\item Без состояния
+		\inputminted{java}{code/Stateless.java}
+		\item С состоянием
+		\inputminted{java}{code/Stateful.java}
+	\end{itemize}
+	\item \textbf{Завершающая операция}. Завершает цепочку, преобразуя поток объектов в результат.
+	\inputminted{java}{code/Termination.java}
+\end{itemize}
+\end{frame}
