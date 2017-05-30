@@ -2,101 +2,21 @@
 % поправить в файле spbau-diploma.cls
 \documentclass{spbau-diploma}
 \begin{document}
-% Год, город, название университета и факультета предопределены,
-% но можно и поменять.
-% Если англоязычная титульная страница не нужна, то ее можно просто удалить.
-\filltitle{ru}{
-    chair              = {Кафедра математических и информационных технологий},
-    title              = {Отладка операций в функциональном стиле на языке Java в среде разработки IntelliJ IDEA},
-    % Здесь указывается тип работы. Возможные значения:
-    %   coursework - Курсовая работа
-    %   diploma - Диплом специалиста
-    %   master - Диплом магистра
-    %   bachelor - Диплом бакалавра
-    type               = {master},
-    position           = {студента},
-    group              = 604,
-    author             = {Бибаев Виталий Игоревич},
-    supervisorPosition = {ООО ИнтеллиДжей Лабс, разработчик платформы IntellJ },
-    supervisor         = {Ушаков Е.\,А.},
-    reviewerPosition   = {ООО ИнтеллиДжей Лабс, разработчик Scala plugin},
-    reviewer           = {Тропин Н.\,В.},
-    chairHeadPosition  = {д.\,ф.-м.\,н., профессор},
-    chairHead          = {Омельченко А.\,В.},
-    % university = {САНКТ-ПЕТЕРБУРГСКИЙ АКАДЕМИЧЕСКИЙ УНИВЕРСИТЕТ},
-    % faculty = {Центр высшего образования},
-    % city = {Санкт-Петербург},
-    % year             = {2013}
-}
-\filltitle{en}{
-    chair              = {Department of Mathematics and Information Technology},
-    title              = {Debugging for functional-style operations on Java in the IntelliJ IDEA IDE},
-    author             = {Vitaliy Bibaev},
-    %TODO: Intellij labs
-    supervisorPosition = {Software Developer in IntelliJ Platform at IntelliJ labs},
-    supervisor         = {Egor Ushakov},
-    reviewerPosition   = {Software Developer in Scala plugin at IntelliJ labs},
-    reviewer           = {Nikolay Tropin},
-    chairHeadPosition  = {professor},
-    chairHead          = {Alexander Omelchenko},
-}
-\maketitle
-\tableofcontents
+\input{head.tex}
+
 % У введения нет номера главы
 \section*{Введение}
-Подмножество, как следует из вышесказанного, допускает неопровержимый ортогональный определитель,
-явно демонстрируя всю чушь вышесказанного. Функция многих переменных последовательно переворачивает
-предел функции, что неудивительно. Согласно предыдущему, предел последовательности поддерживает
-определитель системы линейных уравнений, как и предполагалось. Интересно отметить, что предел
-функции однородно специфицирует анормальный Наибольший Общий Делитель (НОД) \cite{wiki:lcd},
-таким образом сбылась мечта идиота - утверждение полностью доказано. Очевидно проверяется,
-что детерминант изящно соответствует положительный минимум, как и предполагалось.
-
-\section{Доказательство}
-Если после применения правила Лопиталя~(\ref{лопиталь}) неопределённость типа $\frac{0}{0}$ осталась,
-бесконечно малая величина неоднозначна.
-\begin{equation}
-\label{лопиталь}
-\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}
-\end{equation}
-
-Определитель системы линейных уравнений~(\ref{система}),
-в первом приближении, реально допускает интеграл от функции, имеющий конечный разрыв,
-явно демонстрируя всю чушь вышесказанного. Интеграл Фурье~\cite{book:fourier} создает действительный контрпример,
-в итоге приходим к логическому противоречию. К тому же разрыв функции неоднозначен.
-Разрыв функции (рис.~\ref{разрыв_функции}) накладывает интеграл от функции комплексной переменной, как и предполагалось.
-
-
-\begin{equation}
-\label{система}
-\begin{array}{rl}
-5x + 3y & = 0\\
--x + 5y & = 10
-\end{array}
-\end{equation}
-
-% Рисунок, размещенный с предпочтением "вверху страницы"
-\begin{figure}[t]
-\centering
-\includegraphics{fig1.jpg}
-\caption{Разрыв функции}
-\label{разрыв_функции}
-\end{figure}
-
-\begin{figure}[h]
-	\includegraphics{thesis-search-trends}
-	\caption{Статистика поисковых запросов в течении года}
-\end{figure}
+\input{intro.tex}
+\input{chapter1/main.tex}
+\input{chapter2/main.tex}
+\input{chapter3/main.tex}
+\input{chapter4/main.tex}
+\input{chapter5/main.tex}
 
 % У заключения нет номера главы
 \section*{Заключение}
-Огибающая семейства поверхностей позитивно масштабирует невероятный полином, в итоге
-приходим к логическому противоречию. Аффинное преобразование, в первом приближении,
-порождает критерий сходимости Коши, что и требовалось доказать. Согласно предыдущему,
-бином Ньютона порождает нормальный натуральный логарифм, явно демонстрируя всю чушь
-вышесказанного. Замкнутое множество позиционирует предел последовательности, что
-несомненно приведет нас к истине \cite{saturday_is_monday}
+\input{conclusion.tex}
 
 \bibliographystyle{ugost2008ls}
-\bibliography{diploma.bib}
+\bibliography{diploma}
 \end{document}
