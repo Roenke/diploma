@@ -1,0 +1,1 @@
+Arrays.stream(new int[] {1, 2, 3});

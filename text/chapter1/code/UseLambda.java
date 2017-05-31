@@ -1,0 +1,1 @@
+isOdd.test(10);

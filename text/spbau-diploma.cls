@@ -292,6 +292,16 @@
 \newgeometry{a4paper,top=20mm,bottom=20mm,left=30mm,right=15mm,nohead,includeheadfoot}
 }
 
+
+\newcounter{definition}[section]
+\newenvironment{definition}[1][0]{\par\vspace{3mm plus 1mm minus 1mm}\noindent%
+\refstepcounter{definition}%
+\ifx0#1{\bfseries Определение \thesection.\arabic{definition}.\hskip 8pt}%
+\else{\bfseries Определение \thesection.\arabic{definition} {\normalfont(#1)}.}%
+\fi\itshape } {\normalfont\par\vspace{2mm}}
+
+\usepackage{minted} % Листинги кода
+
 %% Каждая глава начинается с новой страницы, введение и заключение не
 %% нумеруются, но в оглавление входят. А само оглавление в оглавление не входит
 \let\old@section\section

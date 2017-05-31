@@ -1,0 +1,1 @@
+final Predicate<Integer> isOdd = x -> x % 2 == 1;

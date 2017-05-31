@@ -1,0 +1,1 @@
+collection.stream().toArray();

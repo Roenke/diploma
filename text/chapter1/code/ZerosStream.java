@@ -1,0 +1,1 @@
+Stream.generate(() -> 0.);
