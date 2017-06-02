@@ -65,7 +65,7 @@
 %% Теперь у нас будут переносы слов
 \usepackage{polyglossia}
 \setdefaultlanguage{russian}
-
+\usepackage{amsmath}
 
 %% Отступ в первом абзаце
 \usepackage{indentfirst}
