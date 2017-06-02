@@ -1,0 +1,1 @@
+=>  LongStream.of(IntStream.of(1,2,3).sum()).count();
