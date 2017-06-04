@@ -1,0 +1,1 @@
+source.stream()./* ops */.anyMatch(predicate);
