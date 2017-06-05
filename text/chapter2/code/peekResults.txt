@@ -1,11 +1,11 @@
-before filter: {id = 1, name = Vasily, age = 10}
+after stream: {id = 1, name = Vasily, age = 10}
 after filter: {id = 1, name = Vasily, age = 10}
-before filter: {id = 2, name = Petr, age = 15}
+after stream: {id = 2, name = Petr, age = 15}
 after filter: {id = 2, name = Petr, age = 15}
-before filter: {id = 3, name = Dmitry, age = 14}
+after stream: {id = 3, name = Dmitry, age = 14}
 after filter: {id = 3, name = Dmitry, age = 14}
-before filter: {id = 4, name = Sasha, age = 20}
-before filter: {id = 5, name = Michael, age = 33}
+after stream: {id = 4, name = Nastya, age = 21}
+after stream: {id = 5, name = Michael, age = 33}
 after sort: {id = 1, name = Vasily, age = 10}
 after map: Vasily
 after sort: {id = 3, name = Dmitry, age = 14}

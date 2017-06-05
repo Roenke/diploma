@@ -5,7 +5,10 @@ public static Collection<Object> example(Collection<Object> collection) {
     final List<Object> transformed = collection.stream()
         .map(x -> doSomeStuff(x))
         .skip(skipBefore)
- =>     .limit(limitValue)
+        .limit(limitValue)
+        .filter(x -> {
+=>          return x.isValid();
+        })
         .collect(Collectors.toList());
 
     collection.addAll(transformed);
