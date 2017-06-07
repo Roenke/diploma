@@ -9,6 +9,6 @@ public static Collection<Object> example(Collection<Object> collection) {
         .collect(Collectors.toList());
 
     limitValue++;
-=>  transformed.stream().forEach(x -> collection.add(x));
+=>  collection.addAll(transformed);
     return collection;
 }
